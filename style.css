@@ -211,6 +211,7 @@ header nav ul li:nth-child(3):hover .drop-menu {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin-top: -130px;
 }
 
 .hero .text-holder h2 {
