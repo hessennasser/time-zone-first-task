@@ -119,6 +119,7 @@ header nav ul .drop-menu {
     width: 100%;
     padding: 10px;
     left: 50%;
+    z-index: 1000;
     transform: translateX(-50%);
     border-radius: 0 10px 0 10px;
     -webkit-border-radius: 0 10px 0 10px;
@@ -132,6 +133,10 @@ header nav ul .drop-menu {
     -o-transition: var(--transition);
     opacity: 0;
     display: none;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 header nav.active ul li:nth-child(3):hover .drop-menu {
@@ -272,11 +277,16 @@ header nav ul li:nth-child(3):hover .drop-menu {
 
     .hero .text-holder h2 {
         font-size: 32px;
+    }
+
+    .hero .text-holder h2,
+    .hero .text-holder p {
         text-align: center;
     }
-    .hero .text-holder a.main-btn{
+
+    .hero .text-holder a.main-btn {
         align-self: center;
     }
 }
 
-/* end hero section  */ 
+/* end hero section  */
